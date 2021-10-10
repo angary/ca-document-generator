@@ -34,7 +34,7 @@ Note the `<database name>` is an optional command line argument which defaults t
 python main.py <database name>
 ```
 
-## Database Structure
+## Database Structure [SUBJECT TO CHANGE]
 
 The requirements can be found in "System Requirement" categorised by department.
 

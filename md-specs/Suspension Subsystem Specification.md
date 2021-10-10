@@ -1,1 +1,0 @@
-# Specification for Suspension Subsystem

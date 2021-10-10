@@ -1,1 +1,0 @@
-# Specification for Drive Train Subsystem
