@@ -30,6 +30,8 @@ To create the documentation, run the following command, which will save the upda
 
 Note the `<database name>` is an optional command line argument which defaults to `database.accdb`.
 
+Currently `database.accdb` is the database to be used for SS8, whilst `database2.accdb` is the one used for SS7.
+
 ```
 python main.py <database name>
 ```
