@@ -32,9 +32,24 @@ To create the documentation, run the following command, which will save the upda
 Note the `<database name>` is an optional command line argument which defaults to `database.accdb`.
 Currently `database.accdb` is the database to be used for SS8, whilst `database2.accdb` is the one used for SS7.
 
+### Sample usage
+
 ```
 python main.py <database name>
 ```
+
+The database name is an optional positional argument.
+If no command line arguments are given, then it will connect to `database.accdb`.
+
+### Command line flags
+
+| Flag                            | Purpose                                                                             |
+| ------------------------------- | ----------------------------------------------------------------------------------- |
+| `-vp`, `--verification-package` | Rather than generating the spec by subsystem, generate them by verification package |
+| `-p`, `--pdf`                   | Also convert the files to pdf format                                                |
+
+I.e. `python main.py database2.accdb -vp -p` will generate the verification packages documents in pdf form as well for the database `database2.accdb`.
+
 
 ## Database Structure [SUBJECT TO CHANGE]
 

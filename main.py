@@ -10,6 +10,7 @@ from pygments import highlight
 from pygments.formatters import HtmlFormatter
 from typing import List
 
+
 def main() -> None:
     # Find database
     args = parse_args()
@@ -39,6 +40,7 @@ def main() -> None:
         gen_pdfs(files)
     print("Finished")
     return
+
 
 def generate_all_spec(cursor: pyodbc.Cursor) -> List[str]:
     file_paths = []
@@ -183,7 +185,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "-vp",
-        "--verification_package",
+        "--verification-package",
         action="store_true",
         help="create documentation for the verification packages"
     )
