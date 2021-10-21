@@ -143,3 +143,6 @@ cython_debug/
 
 # Database lock file
 *.laccdb
+
+# Pdfs because I hate them
+*.pdf

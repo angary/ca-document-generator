@@ -1,13 +1,11 @@
 # Document Generator
 
 This is used to generate the specifications from a CA (Capability Architect) database in Markdown form.
-
 Since CA uses a Microsoft Access Database (`.accdb`) which is a flat-file database, the `.accdb` file can be moved into this repository, where it's data can be extracted.
 
 ## Setup
 
 This generator only works on Windows due to a lack of support for `.accdb` files which is what CA uses.
-
 Assuming you are on windows and have python + pip installed, run the following commands in command prompt to set up the dependencies.
 
 ```sh
@@ -24,12 +22,14 @@ python -m venv env
 pip install -r requirements.txt
 ```
 
+To get the automatic pdf generation, you will have to install wkhtmltopdf [here](https://wkhtmltopdf.org/downloads.html).
+Else you can always manually convert from markdown to pdfs.
+Note that the pdf files are ignored by git as their file sizes are larger than your typical text file.
+
 ## Creating Documentation
 
 To create the documentation, run the following command, which will save the updated spec in `md-specs/`.
-
 Note the `<database name>` is an optional command line argument which defaults to `database.accdb`.
-
 Currently `database.accdb` is the database to be used for SS8, whilst `database2.accdb` is the one used for SS7.
 
 ```
